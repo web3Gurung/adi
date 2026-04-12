@@ -1,0 +1,82 @@
+/* Apple-inspired design: minimal, clean, generous whitespace */
+
+:root {
+    --apple-bg: #ffffff;
+    --apple-text: #1d1d1f;
+    --apple-accent-start: #0071e3;
+    --apple-accent-end: #bf5af2;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --apple-bg: #000000;
+        --apple-text: #f5f5f7;
+        --apple-accent-start: #2997ff;
+        --apple-accent-end: #da8fff;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+        "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--apple-bg);
+    color: var(--apple-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+main {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 12vw, 7rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        var(--apple-accent-start) 0%,
+        var(--apple-accent-end) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Accessibility: respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Ensure readability if gradient text is unsupported */
+@supports not (-webkit-background-clip: text) {
+    h1 {
+        color: var(--apple-accent-start);
+        background: none;
+        -webkit-text-fill-color: currentColor;
+    }
+}
