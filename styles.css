@@ -231,11 +231,11 @@ nav { margin-left: auto; }
 
 .service-icon-wrap {
   width: 44px; height: 44px; border-radius: 10px;
-  background: color-mix(in srgb, var(--c) 12%, transparent);
+  background: var(--c-bg, rgba(14,165,233,.12));
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 1rem;
 }
-.service-icon-wrap svg { width: 22px; height: 22px; color: var(--c); }
+.service-icon-wrap svg { width: 22px; height: 22px; color: var(--c, #0ea5e9); }
 .service-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: .5rem; }
 .service-card p { font-size: .9rem; color: var(--muted); line-height: 1.55; }
 
@@ -413,6 +413,100 @@ nav { margin-left: auto; }
 .footer-bottom-inner p { font-size: .8125rem; color: #475569; text-align: center; }
 
 /* =========================================================
+   NAV BOOK BUTTON
+   ========================================================= */
+.nav-book-btn { padding: .45rem 1.1rem; font-size: .875rem; margin-left: .5rem; }
+
+/* =========================================================
+   STATS STRIP
+   ========================================================= */
+.stats-strip { background: var(--navy); padding: 2.5rem 0; }
+.stats-inner {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; flex-wrap: wrap;
+}
+.stat-item {
+  display: flex; flex-direction: column; align-items: center;
+  padding: .5rem 3rem; text-align: center;
+}
+.stat-num {
+  font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800;
+  color: var(--white); line-height: 1; font-variant-numeric: tabular-nums;
+}
+.stat-suffix { font-size: 1.5rem; font-weight: 800; color: var(--blue); display: inline; }
+.stat-item .stat-num + .stat-suffix { margin-left: 1px; }
+.stat-label {
+  font-size: .8125rem; font-weight: 500; color: #94a3b8;
+  margin-top: .4rem; text-transform: uppercase; letter-spacing: .06em;
+}
+.stat-divider { width: 1px; height: 52px; background: #1e293b; flex-shrink: 0; }
+
+/* =========================================================
+   EMERGENCY BANNER
+   ========================================================= */
+.emergency-banner { background: #1e293b; padding: 1.25rem 0; border-top: 1px solid #334155; }
+.emergency-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
+}
+.emergency-text {
+  display: flex; align-items: center; gap: .75rem;
+  color: #e2e8f0; font-size: .9375rem;
+}
+.emergency-text svg { color: #f87171; flex-shrink: 0; }
+.emergency-text strong { color: var(--white); }
+.emergency-text span { color: #94a3b8; }
+.emergency-actions { display: flex; gap: .75rem; flex-wrap: wrap; }
+.btn-emergency {
+  display: inline-flex; align-items: center;
+  padding: .55rem 1.25rem; border-radius: 8px; font-size: .875rem;
+  font-weight: 600; background: #ef4444; color: white;
+  border: 2px solid #ef4444; transition: var(--transition);
+}
+.btn-emergency:hover { background: #dc2626; border-color: #dc2626; }
+.btn-emergency-outline {
+  display: inline-flex; align-items: center;
+  padding: .55rem 1.25rem; border-radius: 8px; font-size: .875rem;
+  font-weight: 600; background: transparent; color: #e2e8f0;
+  border: 2px solid #475569; transition: var(--transition);
+}
+.btn-emergency-outline:hover { border-color: #e2e8f0; color: white; }
+
+/* =========================================================
+   WHATSAPP FLOATING BUTTON
+   ========================================================= */
+.whatsapp-btn {
+  position: fixed; bottom: 5rem; right: 1.5rem; z-index: 200;
+  display: flex; align-items: center; gap: .5rem;
+  background: #25d366; color: white; border-radius: 999px;
+  padding: .65rem 1.1rem .65rem .65rem;
+  box-shadow: 0 4px 20px rgba(37,211,102,.4);
+  font-size: .875rem; font-weight: 600;
+  transition: transform var(--transition), box-shadow var(--transition);
+  animation: wa-pulse 2.5s ease infinite;
+}
+.whatsapp-btn svg { width: 32px; height: 32px; flex-shrink: 0; }
+.whatsapp-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(37,211,102,.55); animation: none; }
+
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,.4); }
+  50% { box-shadow: 0 4px 28px rgba(37,211,102,.7); }
+}
+
+/* =========================================================
+   SCROLL-TO-TOP
+   ========================================================= */
+.scroll-top {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 200;
+  width: 42px; height: 42px; border-radius: 10px;
+  background: var(--navy); color: white; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-lg); transition: var(--transition);
+}
+.scroll-top svg { width: 18px; height: 18px; }
+.scroll-top:hover { background: var(--blue); transform: translateY(-2px); }
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 @media (max-width: 1024px) {
@@ -422,6 +516,7 @@ nav { margin-left: auto; }
 
 @media (max-width: 768px) {
   nav { display: none; }
+  .nav-book-btn { display: none; }
   .hamburger { display: flex; }
   .mobile-menu.open { display: block; }
 
@@ -441,12 +536,22 @@ nav { margin-left: auto; }
   .section { padding: 3.5rem 0; }
 }
 
+@media (max-width: 600px) {
+  .stats-inner { gap: 1.5rem; }
+  .stat-item { padding: .5rem 1.5rem; }
+  .stat-divider { display: none; }
+  .emergency-inner { flex-direction: column; align-items: flex-start; }
+  .emergency-text { flex-wrap: wrap; }
+}
+
 @media (max-width: 480px) {
   .topbar-inner { flex-direction: column; gap: .25rem; text-align: center; }
   .footer-inner { grid-template-columns: 1fr; }
   .credentials-stats { flex-direction: column; gap: .75rem; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { justify-content: center; }
+  .whatsapp-btn .whatsapp-label { display: none; }
+  .whatsapp-btn { padding: .65rem; border-radius: 50%; }
 }
 
 /* ── Accessibility ── */

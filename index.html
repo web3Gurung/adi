@@ -40,6 +40,7 @@
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
+      <a href="#appointment" class="btn btn-primary nav-book-btn">Book Appointment</a>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -93,6 +94,31 @@
       </div>
     </section>
 
+    <!-- ── STATS ── -->
+    <div class="stats-strip" aria-label="Clinic at a glance">
+      <div class="container stats-inner">
+        <div class="stat-item">
+          <span class="stat-num" data-target="21">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years of Practice</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5000">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Patients Treated</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Core Services</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="2002">0</span>
+          <span class="stat-label">Established</span>
+        </div>
+      </div>
+    </div>
+
     <!-- ── PILLARS ── -->
     <section class="pillars">
       <div class="container">
@@ -132,7 +158,7 @@
         <div class="services-grid">
 
           <article class="service-card">
-            <div class="service-icon-wrap" style="--c: #0ea5e9">
+            <div class="service-icon-wrap" style="--c:#0ea5e9;--c-bg:rgba(14,165,233,.12)"
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 4v4l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
             <h3>Dental Implants</h3>
@@ -140,7 +166,7 @@
           </article>
 
           <article class="service-card">
-            <div class="service-icon-wrap" style="--c: #6366f1">
+            <div class="service-icon-wrap" style="--c:#6366f1;--c-bg:rgba(99,102,241,.12)"
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <h3>Single Sitting Root Canal Treatment</h3>
@@ -148,7 +174,7 @@
           </article>
 
           <article class="service-card">
-            <div class="service-icon-wrap" style="--c: #f59e0b">
+            <div class="service-icon-wrap" style="--c:#f59e0b;--c-bg:rgba(245,158,11,.12)"
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12h6m-3-3v6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
             <h3>Impacted Tooth Removal</h3>
@@ -156,7 +182,7 @@
           </article>
 
           <article class="service-card">
-            <div class="service-icon-wrap" style="--c: #ec4899">
+            <div class="service-icon-wrap" style="--c:#ec4899;--c-bg:rgba(236,72,153,.12)"
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 3l14 9-14 9V3z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <h3>Cosmetic Smile Designing</h3>
@@ -164,7 +190,7 @@
           </article>
 
           <article class="service-card">
-            <div class="service-icon-wrap" style="--c: #10b981">
+            <div class="service-icon-wrap" style="--c:#10b981;--c-bg:rgba(16,185,129,.12)"
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
             <h3>Braces and Orthodontic Care</h3>
@@ -172,7 +198,7 @@
           </article>
 
           <article class="service-card">
-            <div class="service-icon-wrap" style="--c: #f97316">
+            <div class="service-icon-wrap" style="--c:#f97316;--c-bg:rgba(249,115,22,.12)"
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <h3>Kids Dentistry</h3>
@@ -434,6 +460,21 @@
 
   </main>
 
+  <!-- ── EMERGENCY BANNER ── -->
+  <div class="emergency-banner">
+    <div class="container emergency-inner">
+      <div class="emergency-text">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <strong>Dental Emergency?</strong>
+        <span>Call us immediately — same-day emergency slots available.</span>
+      </div>
+      <div class="emergency-actions">
+        <a href="tel:+911204103510" class="btn btn-emergency">+91-120-4103510</a>
+        <a href="tel:+919910441515" class="btn btn-emergency-outline">+91-9910441515</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ── FOOTER ── -->
   <footer class="footer" id="footer">
     <div class="container footer-inner">
@@ -489,6 +530,20 @@
     </div>
   </footer>
 
+  <!-- ── FLOATING BUTTONS ── -->
+  <a href="https://wa.me/919910441515?text=Hello%20Jyoti%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment."
+     class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="16" cy="16" r="16" fill="#25d366"/>
+      <path d="M22.5 9.5C20.9 7.9 18.8 7 16.5 7 11.8 7 8 10.8 8 15.5c0 1.5.4 3 1.1 4.3L8 24l4.4-1.1c1.2.7 2.6 1 4 1h.1c4.7 0 8.5-3.8 8.5-8.5 0-2.3-.9-4.4-2.5-5.9zm-6 13c-1.3 0-2.5-.3-3.6-1l-.3-.2-2.6.7.7-2.5-.2-.3c-.7-1.1-1.1-2.4-1.1-3.7 0-3.9 3.1-7 7-7 1.9 0 3.6.7 4.9 2s2 3 2 4.9c0 3.9-3.1 7-7 7l-.8.1zm3.8-5.2c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.5.1-.2.2-.6.7-.8.9-.1.2-.3.2-.5.1-.7-.3-1.4-.7-1.9-1.3-.5-.5-.9-1.1-1.1-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4 0-.1 0-.3-.1-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4H12c-.2 0-.4.1-.6.2-.6.7-.9 1.5-.9 2.3 0 1.3.7 2.6 1.7 3.5 1.7 1.7 3.7 2.5 5.9 2.5.7 0 1.4-.2 2-.5.6-.3 1-.8 1.2-1.4.1-.5.1-.9-.1-1.1l-.9-.4z" fill="white"/>
+    </svg>
+    <span class="whatsapp-label">WhatsApp</span>
+  </a>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 15l7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
   <script>
     // Set today as min date
     const d = document.getElementById('pref-date');
@@ -540,6 +595,31 @@
         document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }, 1000);
     });
+
+    // Scroll-to-top
+    const scrollTopBtn = document.getElementById('scroll-top');
+    window.addEventListener('scroll', () => { scrollTopBtn.hidden = window.scrollY < 400; }, { passive: true });
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Animated stat counters
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 1600;
+      const start = performance.now();
+      const isYear = target > 1000;
+      const startVal = isYear ? target - 40 : 0;
+      (function tick(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(startVal + (target - startVal) * ease).toLocaleString('en-IN');
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target.toLocaleString('en-IN');
+      })(start);
+    }
+    const statObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); statObs.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-num').forEach(el => statObs.observe(el));
 
     // Scroll-in animation
     const io = new IntersectionObserver(entries => {
