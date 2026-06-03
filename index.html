@@ -1,16 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="A simple happy birthday greeting.">
-    <meta name="theme-color" content="#ffffff">
-    <title>Happy Birthday</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jyoti Dental Care – Comprehensive dental care under one roof in Ghaziabad. Led by Dr. Saurabh Goel with 21+ years of experience.">
+  <meta name="theme-color" content="#0f172a">
+  <title>Jyoti Dental Care – Ghaziabad</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <h1 aria-label="Happy Birthday">Happy Birthday</h1>
-    </main>
+
+  <!-- ── TOP BAR ── -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Customer Care: <a href="tel:+911204103510">+91-120-4103510</a></span>
+      <a href="#appointment" class="topbar-cta">Book Appointment</a>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Jyoti Dental Care home">
+        <div class="logo-icon" aria-hidden="true">JDC</div>
+        <div class="logo-text">
+          <span class="logo-name">Jyoti Dental Care</span>
+          <span class="logo-sub">Comprehensive dental care under one roof in Ghaziabad</span>
+        </div>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#doctor" class="nav-link">Doctor</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#appointment" class="btn btn-primary nav-book-btn">Book Appointment</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#doctor" class="mobile-link">Doctor</a></li>
+        <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="#appointment" class="mobile-link mobile-link--cta">Book Appointment</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Trusted Dental Clinic in Ghaziabad</p>
+          <h1>Confident smiles built on experienced, comprehensive dental care.</h1>
+          <p class="hero-desc">Welcome to Jyoti Dental Care. Led by Dr. Saurabh Goel, we provide preventive, restorative, implant, and cosmetic dentistry with a patient-first approach.</p>
+          <div class="hero-actions">
+            <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+            <a href="tel:+911204103510" class="btn btn-outline">Call +91-120-4103510</a>
+          </div>
+        </div>
+
+        <div class="hero-card-wrap" aria-hidden="true">
+          <div class="hero-card">
+            <p class="hero-card-label">Why families choose us</p>
+            <ul class="hero-card-list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0ea5e9" opacity=".15"/><path d="M6 10l3 3 5-5" stroke="#0ea5e9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Since 2002 with continuity of care
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0ea5e9" opacity=".15"/><path d="M6 10l3 3 5-5" stroke="#0ea5e9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                21+ years of practice across general and aesthetic dentistry
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0ea5e9" opacity=".15"/><path d="M6 10l3 3 5-5" stroke="#0ea5e9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Focused treatment planning, hygiene, and patient safety
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS ── -->
+    <div class="stats-strip" aria-label="Clinic at a glance">
+      <div class="container stats-inner">
+        <div class="stat-item">
+          <span class="stat-num" data-target="21">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years of Practice</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5000">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Patients Treated</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Core Services</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="2002">0</span>
+          <span class="stat-label">Established</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PILLARS ── -->
+    <section class="pillars">
+      <div class="container">
+        <p class="pillars-heading">Built on experience, quality, and faith.</p>
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <h3>Comprehensive care</h3>
+            <p>General, restorative, implant, cosmetic, and pediatric dental services in one clinic.</p>
+          </div>
+          <div class="pillar-card">
+            <h3>Patient-first process</h3>
+            <p>Clear diagnosis, practical treatment plans, and proper follow-up at every visit.</p>
+          </div>
+          <div class="pillar-card">
+            <h3>Safety and hygiene</h3>
+            <p>Modern materials and clinical standards aimed at safe, consistent outcomes.</p>
+          </div>
+        </div>
+
+        <div class="affiliations">
+          <p class="affiliations-label">Panel affiliations</p>
+          <div class="affiliations-chips">
+            <span>CGHS</span><span>ECHS</span><span>DJB</span><span>BSES</span>
+            <span>MCD</span><span>DTC</span><span>Delhi University</span><span>Delhi Police</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Services</p>
+          <h2>Core treatments for long-term oral health.</h2>
+        </div>
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--c:#0ea5e9;--c-bg:rgba(14,165,233,.12)">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 4v4l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Dental Implants</h3>
+            <p>Tooth replacement solutions designed for stability, function, and a natural appearance.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--c:#6366f1;--c-bg:rgba(99,102,241,.12)">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Single Sitting Root Canal Treatment</h3>
+            <p>Modern endodontic care focused on preserving your natural tooth with comfort in mind.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--c:#f59e0b;--c-bg:rgba(245,158,11,.12)">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12h6m-3-3v6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Impacted Tooth Removal</h3>
+            <p>Careful diagnosis and treatment planning for impacted wisdom teeth and surgical extractions.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--c:#ec4899;--c-bg:rgba(236,72,153,.12)">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 3l14 9-14 9V3z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Cosmetic Smile Designing</h3>
+            <p>Personalised aesthetic dentistry including smile enhancement, veneers, and tooth contouring.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--c:#10b981;--c-bg:rgba(16,185,129,.12)">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Braces and Orthodontic Care</h3>
+            <p>Alignment-focused treatment options for bite correction and long-term oral health.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--c:#f97316;--c-bg:rgba(249,115,22,.12)">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Kids Dentistry</h3>
+            <p>Child-friendly preventive and corrective treatment tailored to every growth stage.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DOCTOR ── -->
+    <section class="section section--alt doctor-section" id="doctor">
+      <div class="container doctor-inner">
+        <div class="doctor-content">
+          <p class="section-eyebrow">About the Doctor</p>
+          <h2>Dr. Saurabh Goel</h2>
+          <p>Dr. Goel is known for combining structured diagnosis with practical, patient-friendly treatment. His approach centres on discipline, dedication, and clear communication, especially for complex and multi-step dental cases.</p>
+          <p>With extensive clinical exposure in general, implant, aesthetic, and pediatric dentistry, he leads treatment with a team mindset when specialist input is needed.</p>
+          <a href="#appointment" class="btn btn-primary" style="margin-top:1.5rem">Book a Consultation</a>
+        </div>
+        <div class="credentials-card">
+          <h3>Credentials</h3>
+          <ul class="credentials-list">
+            <li>
+              <svg class="cred-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0ea5e9" opacity=".15"/><path d="M6 10l3 3 5-5" stroke="#0ea5e9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              B.D.S., HDC College, Sundar Nagar (HP)
+            </li>
+            <li>
+              <svg class="cred-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0ea5e9" opacity=".15"/><path d="M6 10l3 3 5-5" stroke="#0ea5e9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              P.G.C.E, Endodontist (GDC Ahmedabad)
+            </li>
+            <li>
+              <svg class="cred-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0ea5e9" opacity=".15"/><path d="M6 10l3 3 5-5" stroke="#0ea5e9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Consultant, Narinder Mohan Hospital
+            </li>
+          </ul>
+          <div class="credentials-stats">
+            <div class="cred-stat">
+              <span class="cred-num">21+</span>
+              <span class="cred-label">Years of Practice</span>
+            </div>
+            <div class="cred-stat">
+              <span class="cred-num">2002</span>
+              <span class="cred-label">Year Established</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ── -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Patient Feedback</p>
+          <h2>Comfort, clarity, and trust in every visit.</h2>
+        </div>
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Absolutely comfortable experience. I am very pleased with the attention given to my dental needs and the clear guidance on future care."</blockquote>
+            <div class="testimonial-footer">
+              <div class="avatar" style="--bg:#0ea5e9">V</div>
+              <div>
+                <strong>Vinod K. Bhati</strong>
+                <span>Manager, The Solution Guru</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"My 5-year-old son was fearful of dental visits, but Dr. Saurabh built trust quickly and made the entire exam and cleaning process smooth."</blockquote>
+            <div class="testimonial-footer">
+              <div class="avatar" style="--bg:#10b981">I</div>
+              <div>
+                <strong>Inder Kaushal</strong>
+                <span>Proprietor, AVN Enterprises</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Dr. Goel's approach to explaining every step of the treatment gave me complete confidence. The clinic is immaculate and the staff genuinely caring."</blockquote>
+            <div class="testimonial-footer">
+              <div class="avatar" style="--bg:#6366f1">R</div>
+              <div>
+                <strong>Ritu Sharma</strong>
+                <span>Patient – Cosmetic Treatment</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Had my root canal done in a single sitting — completely painless. Could not believe how straightforward the whole experience was. Highly recommended!"</blockquote>
+            <div class="testimonial-footer">
+              <div class="avatar" style="--bg:#f59e0b">A</div>
+              <div>
+                <strong>Amit Verma</strong>
+                <span>Patient – Root Canal Treatment</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── APPOINTMENT ── -->
+    <section class="section section--alt" id="appointment">
+      <div class="container appt-inner">
+
+        <div class="appt-info">
+          <p class="section-eyebrow">Book a Visit</p>
+          <h2>Request an appointment in under a minute.</h2>
+          <p>Share your preferred time and treatment requirement. For urgent appointments, please call the clinic directly.</p>
+          <div class="appt-contacts">
+            <div class="appt-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong>Clinic</strong>
+                <a href="tel:+911204103510">+91-120-4103510</a>
+              </div>
+            </div>
+            <div class="appt-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong>Mobile</strong>
+                <a href="tel:+919910441515">+91-9910441515</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="appt-form" id="appt-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-person">Contact Person <span aria-hidden="true">*</span></label>
+              <input type="text" id="contact-person" name="contact-person" placeholder="Your full name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="treatment">Treatment Required <span aria-hidden="true">*</span></label>
+            <select id="treatment" name="treatment" required>
+              <option value="">Select treatment</option>
+              <option>Dental Implants</option>
+              <option>Single Sitting Root Canal</option>
+              <option>Impacted Tooth Removal</option>
+              <option>Cosmetic Smile Designing</option>
+              <option>Braces / Orthodontic Care</option>
+              <option>Kids Dentistry</option>
+              <option>General Check-up & Cleaning</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pref-date">Preferred Date</label>
+            <input type="date" id="pref-date" name="pref-date">
+          </div>
+          <div class="form-group">
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details" rows="4" placeholder="Describe your concern or any specific needs..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Appointment Request</button>
+          <div class="form-success" id="form-success" hidden aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Thank you! We'll confirm your appointment within 24 hours.
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ── CONTACT / FAQ ── -->
+    <section class="section" id="contact">
+      <div class="container contact-inner">
+
+        <div class="contact-block">
+          <p class="section-eyebrow">Contact</p>
+          <h2>Find Us</h2>
+          <address class="contact-list">
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong>Clinic</strong>
+                <a href="tel:+911204103510">+91-120-4103510</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong>Mobile</strong>
+                <a href="tel:+919910441515">+91-9910441515</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong>Location</strong>
+                <span>Ghaziabad, Uttar Pradesh, India</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong>Hours</strong>
+                <span>Mon–Sat &nbsp;9:00 AM – 7:00 PM</span>
+              </div>
+            </div>
+          </address>
+        </div>
+
+        <div class="faq-block">
+          <p class="section-eyebrow">FAQ</p>
+          <h2>Common Questions</h2>
+          <div class="faq-list">
+
+            <details class="faq-item">
+              <summary>How often should I visit the dentist?</summary>
+              <div class="faq-answer">Every 6 months for a routine check-up and cleaning. Patients with ongoing treatment may need more frequent visits as advised.</div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Is root canal treatment painful?</summary>
+              <div class="faq-answer">No. Modern single-sitting root canal treatment is performed under local anaesthesia. Most patients feel little to no discomfort during the procedure.</div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do you accept CGHS / ECHS patients?</summary>
+              <div class="faq-answer">Yes. We are empanelled with CGHS, ECHS, DJB, BSES, MCD, DTC, Delhi University, and Delhi Police. Please carry your card on your visit.</div>
+            </details>
+
+            <details class="faq-item">
+              <summary>What age should children start visiting?</summary>
+              <div class="faq-answer">We recommend the first dental visit by age 1, or within 6 months of the first tooth appearing. Early visits help build positive habits and catch issues early.</div>
+            </details>
+
+            <details class="faq-item">
+              <summary>How long does implant treatment take?</summary>
+              <div class="faq-answer">The full process typically takes 3–6 months depending on bone health and healing. We will walk you through a personalised timeline at your consultation.</div>
+            </details>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── EMERGENCY BANNER ── -->
+  <div class="emergency-banner">
+    <div class="container emergency-inner">
+      <div class="emergency-text">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <strong>Dental Emergency?</strong>
+        <span>Call us immediately — same-day emergency slots available.</span>
+      </div>
+      <div class="emergency-actions">
+        <a href="tel:+911204103510" class="btn btn-emergency">+91-120-4103510</a>
+        <a href="tel:+919910441515" class="btn btn-emergency-outline">+91-9910441515</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="Jyoti Dental Care">
+          <div class="logo-icon" aria-hidden="true">JDC</div>
+          <div class="logo-text">
+            <span class="logo-name">Jyoti Dental Care</span>
+            <span class="logo-sub">Ghaziabad</span>
+          </div>
+        </a>
+        <p>Providing patient-first dental care in Ghaziabad since 2002. Trusted by thousands of families across the region.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">Root Canal</a></li>
+          <li><a href="#services">Tooth Removal</a></li>
+          <li><a href="#services">Smile Designing</a></li>
+          <li><a href="#services">Braces</a></li>
+          <li><a href="#services">Kids Dentistry</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#doctor">About Doctor</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#appointment">Book Appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><a href="tel:+911204103510">+91-120-4103510</a></li>
+          <li><a href="tel:+919910441515">+91-9910441515</a></li>
+          <li>Ghaziabad, UP, India</li>
+          <li>Mon–Sat: 9 AM – 7 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 Jyoti Dental Care. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING BUTTONS ── -->
+  <a href="https://wa.me/919910441515?text=Hello%20Jyoti%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment."
+     class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="16" cy="16" r="16" fill="#25d366"/>
+      <path d="M22.5 9.5C20.9 7.9 18.8 7 16.5 7 11.8 7 8 10.8 8 15.5c0 1.5.4 3 1.1 4.3L8 24l4.4-1.1c1.2.7 2.6 1 4 1h.1c4.7 0 8.5-3.8 8.5-8.5 0-2.3-.9-4.4-2.5-5.9zm-6 13c-1.3 0-2.5-.3-3.6-1l-.3-.2-2.6.7.7-2.5-.2-.3c-.7-1.1-1.1-2.4-1.1-3.7 0-3.9 3.1-7 7-7 1.9 0 3.6.7 4.9 2s2 3 2 4.9c0 3.9-3.1 7-7 7l-.8.1zm3.8-5.2c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.5.1-.2.2-.6.7-.8.9-.1.2-.3.2-.5.1-.7-.3-1.4-.7-1.9-1.3-.5-.5-.9-1.1-1.1-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4 0-.1 0-.3-.1-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4H12c-.2 0-.4.1-.6.2-.6.7-.9 1.5-.9 2.3 0 1.3.7 2.6 1.7 3.5 1.7 1.7 3.7 2.5 5.9 2.5.7 0 1.4-.2 2-.5.6-.3 1-.8 1.2-1.4.1-.5.1-.9-.1-1.1l-.9-.4z" fill="white"/>
+    </svg>
+    <span class="whatsapp-label">WhatsApp</span>
+  </a>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 15l7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script>
+    // Set today as min date
+    const d = document.getElementById('pref-date');
+    if (d) d.min = new Date().toISOString().split('T')[0];
+
+    // Hamburger
+    const btn = document.getElementById('hamburger');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      btn.classList.toggle('active', open);
+      btn.setAttribute('aria-expanded', open);
+      menu.setAttribute('aria-hidden', !open);
+    });
+    document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => {
+      menu.classList.remove('open');
+      btn.classList.remove('active');
+      btn.setAttribute('aria-expanded', false);
+      menu.setAttribute('aria-hidden', true);
+    }));
+
+    // Scroll → header shadow + active nav
+    const header = document.getElementById('header');
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 30);
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+    }, { passive: true });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - 80, behavior: 'smooth' }); }
+      });
+    });
+
+    // Form
+    document.getElementById('appt-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const sb = this.querySelector('button[type=submit]');
+      sb.disabled = true; sb.textContent = 'Submitting…';
+      setTimeout(() => {
+        document.getElementById('form-success').hidden = false;
+        this.reset(); sb.disabled = false; sb.textContent = 'Submit Appointment Request';
+        document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 1000);
+    });
+
+    // Scroll-to-top
+    const scrollTopBtn = document.getElementById('scroll-top');
+    window.addEventListener('scroll', () => { scrollTopBtn.hidden = window.scrollY < 400; }, { passive: true });
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Animated stat counters
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 1600;
+      const start = performance.now();
+      const isYear = target > 1000;
+      const startVal = isYear ? target - 40 : 0;
+      (function tick(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(startVal + (target - startVal) * ease).toLocaleString('en-IN');
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target.toLocaleString('en-IN');
+      })(start);
+    }
+    const statObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); statObs.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-num').forEach(el => statObs.observe(el));
+
+    // Scroll-in animation
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.service-card, .testimonial-card, .pillar-card, .faq-item, .credentials-card').forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
